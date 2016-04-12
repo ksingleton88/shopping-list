@@ -8,6 +8,7 @@ body{
 	margin: 0 auto;
 	position: center center;
 	background-repeat: no-repeat;
+	overflow: hidden;
 }
 
 li{
@@ -19,16 +20,55 @@ li{
 	background-image: url('../images/postit.png');
 	background-repeat: no-repeat;
     margin-left: 30%;
-    margin-top: 10%;
+
     padding: 150px 101px;
+    font-family: 'Permanent Marker', Arial, serif;
+    font-size: 2.5em;
+
  
 }
 
-form{
+.enter-items ul{
+	margin-left: 75%;
+	padding: 2%;
+	border: none;
+
+
 }
 
-input[type="checkbox"]:checked + label {
-	text-decoration: line-through;
-	-webkit-appearance: none;
+
+
+#input-box,
+#input-button{
+	font-family: 'Permanent Marker', Arial, serif;
+	font-size: 1.5em;
+	background-color: green;
+	color: #000000;
+
 }
+
+#input-button{
+	border: none;
+	background: transparent;
+}
+
+#input-box{
+	border: solid;
+}
+.postit form{
+	-ms-transform: rotate(1deg); /* IE 9 */
+	-webkit-transform: rotate(1deg); /* Chrome, Safari, Opera */
+ 	transform: rotate(1deg);
+}
+
+
+.delete{
+	float: right;
+	margin-top: 30px; 
+	margin-right: 70%;
+	width: 2%;
+	/*display: none;*/
+
+}
+
 

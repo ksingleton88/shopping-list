@@ -4,19 +4,25 @@
 	<meta charset="UTF-8">
 	<title>Shopping List</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
 </head>
 <body>
+	<section class="enter-items">
+		<ul>
+			<li><input id="input-box"></li>
+			<li><input id="input-button" type="submit" value="ADD TO LIST"><li>
+		</ul>
+	</section>
 	<section class="checklist">
 		<div class="postit">
 			<form method="get">
 				<ul>
-					<li><input class="food"type="checkbox" name="food" value="bread"><label for="food">Bread</label></li>
-					<li><input class="food" type="checkbox" name="food" value="milk"><label for="food">Milk</label></li>
-					<li><input  class="food" type="checkbox" name="food" value="cheese"><label for="food">Cheese</label></li>					
-					<li><input class="food" type="checkbox" name="food" value="butter"><label for="food">Butter</label></li>
+					<li class="list-items">
+						<div class="checkbox"></div>
+						<span>Milk</span>
+						<img class="delete" src="images/delete.png">
+					</li>
 				</ul>
-				<input id="item">
-				<input type="submit" value="Add To List">
 			</form>
 		</div>
 	</section>
