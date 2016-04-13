@@ -8,25 +8,35 @@
 </head>
 <body>
 	<section class="enter-items">
-		<ul>
-			<li><input id="input-box"></li>
-			<li><input id="input-button" type="submit" value="ADD TO LIST"><li>
-		</ul>
+		<form name="checkListForm">
+			<input id="input" type="text" name="checkListItem">
+			<div id="button">ADD TO LIST</div>
+		</form>
 	</section>
 	<section class="checklist">
 		<div class="postit">
-			<form method="get">
-				<ul>
+				<ul class="list">
 					<li class="list-items">
 						<div class="checkbox"></div>
 						<span>Milk</span>
 						<img class="delete" src="images/delete.png">
 					</li>
+					<li class="list-items">
+						<div class="checkbox"></div>
+						<span>Veggies</span>
+						<img class="delete" src="images/delete.png">
+					</li>
+					<li class="list-items">
+						<div class="checkbox"></div>
+						<span>Jameson</span>
+						<img class="delete" src="images/delete.png">
+					</li>
 				</ul>
-			</form>
 		</div>
 	</section>
-	<script src="js/run.js"></script>
+
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+	<script language="javascript" type="text/javascript" src="js/run.js"></script>
 	
 </body>
 </html>
