@@ -1,8 +1,8 @@
 $(document).ready(function () {
-	$('#button').click(function() {
-		var toAdd =$("input[name=checkListItem]").val();
-		$(".list").append("<li class='item'>" + " " + toAdd + "</li>");
-	});
+	//$('#button').click(function() {
+	//	var toAdd =$("input[name=checkListItem]").val();
+	//	$(".list").append("<li class='item'>" + " " + toAdd + "</li>");
+	//});
 
 
 
@@ -27,15 +27,21 @@ $(document).ready(function () {
 
 
 
-	$(document).on('keydown', function(e) {
-		var code = e.keyCode;
-		var toAdd =$("input[name=checkListItem]").val();
-			if(code == 13){
-				event.preventDefault();
-				$(".list").append("<li class='item'>" + " " + toAdd + "</li>");
-				return false;
-			};
-
+	//$(document).on('keydown', function(e) {
+	//	var code = e.keyCode;
+	//	var toAdd =$("input[name=checkListItem]").val();
+	//		if(code == 13){
+	//			event.preventDefault();
+	//			$(".list").append("<li class='item'>" + " " + toAdd + "</li>");
+	//			return false;
+	//		};
+  //
+	//});
+	
+	$('form').submit(function (e) {
+		e.preventDefault();
+		var toAdd = $("input[name=checkListItem]").val();
+		$(".list").append("<li class='item'>" + " " + toAdd + "</li>");
 	});
 });
 
