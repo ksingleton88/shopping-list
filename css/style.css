@@ -55,16 +55,4 @@ ul{
 }
 
 
-.delete{
-	float: right;
-	margin-top: 30px; 
-	margin-right: 70%;
-	width: 2%;
-	display: none;
-}
-
-.list-items:hover + img{
-	display: block;
-}
-
 
