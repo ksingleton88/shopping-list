@@ -46,5 +46,5 @@ $(document).ready(function () {
 });
 
 
-
+//test
 //when hovering over text, 'x' image does not show on new text elements. 
