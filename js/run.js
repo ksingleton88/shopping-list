@@ -1,8 +1,8 @@
 $(document).ready(function () {
-	$('#button').click(function() {
-		var toAdd =$("input[name=checkListItem]").val();
-		$(".list").append("<li class='item'>" + " " + toAdd + "</li>");
-	});
+	//$('#button').click(function() {
+	//	var toAdd =$("input[name=checkListItem]").val();
+	//	$(".list").append("<li class='item'>" + " " + toAdd + "</li>");
+	//});
 
 
 
@@ -13,6 +13,7 @@ $(document).ready(function () {
 	// // 	}
 	// // );
 
+	//BETTER CODE THAN HOVER. ALLOWS IMAGE X TO APPEAR ON NEW/OLD TEXT ENTRY
  //     $(document).on('mouseenter', 'li', function(){
 	// 	$(this).append($('<span> X </span>') );
 	// }).on('mouseleave', 'li', function(){
@@ -25,20 +26,24 @@ $(document).ready(function () {
 	});
 
 
+	//$(document).on('keydown', function(e) {
+	//	var code = e.keyCode;
+	//	var toAdd =$("input[name=checkListItem]").val();
+	//		if(code == 13){
+	//			event.preventDefault();
+	//			$(".list").append("<li class='item'>" + " " + toAdd + "</li>");
+	//			return false;
+	//		};
+  //
+	//});
+	
+	// CLEANED UP CODE FROM ABOVE
 
-
-	$(document).on('keydown', function(e) {
-		var code = e.keyCode;
-		var toAdd =$("input[name=checkListItem]").val();
-			if(code == 13){
-				event.preventDefault();
-				$(".list").append("<li class='item'>" + " " + toAdd + "</li>");
-				return false;
-			};
-
+	$('form').submit(function (e) {
+		e.preventDefault();
+		var toAdd = $("input[name=checkListItem]").val();
+		$(".list").append("<li class='item'>" + " " + toAdd + "</li>");
+		$('#input').val('');
 	});
-});
+}); 
 
-
-
-//when hovering over text, 'x' image does not show on new text elements. 
