@@ -54,5 +54,11 @@ ul{
 	margin-top: -300px;
 }
 
+.list .item:hover:after{
+	content: 'X';
+	font-size: .5em;
+	font-weight: bold;
+	color: red;
+}
 
 

@@ -6,18 +6,18 @@ $(document).ready(function () {
 
 
 
-	// $('li').hover(function(){
-	// 	$(this).append($('<span> X </span>') );
-	// }, function(){
-	// 	$(this).find('span:last').remove();
-	// 	}
-	// );
+	// // $('li').hover(function(){
+	// // 	$(this).append($('<span> X </span>') );
+	// // }, function(){
+	// // 	$(this).find('span:last').remove();
+	// // 	}
+	// // );
 
-     $(document).on('mouseenter', 'li', function(){
-		$(this).append($('<span> X </span>') );
-	}).on('mouseleave', 'li', function(){
-		$(this).find('span:last').remove();
-        });
+ //     $(document).on('mouseenter', 'li', function(){
+	// 	$(this).append($('<span> X </span>') );
+	// }).on('mouseleave', 'li', function(){
+	// 	$(this).find('span:last').remove();
+ //        });
 
 
 	$(document).on('click', 'li', function() {
