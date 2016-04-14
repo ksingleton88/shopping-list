@@ -13,6 +13,7 @@ $(document).ready(function () {
 	// // 	}
 	// // );
 
+	//BETTER CODE THAN HOVER. ALLOWS IMAGE X TO APPEAR ON NEW/OLD TEXT ENTRY
  //     $(document).on('mouseenter', 'li', function(){
 	// 	$(this).append($('<span> X </span>') );
 	// }).on('mouseleave', 'li', function(){
@@ -23,8 +24,6 @@ $(document).ready(function () {
 	$(document).on('click', 'li', function() {
 		$(this).remove();
 	});
-
-
 
 
 	//$(document).on('keydown', function(e) {
@@ -38,13 +37,13 @@ $(document).ready(function () {
   //
 	//});
 	
+	// CLEANED UP CODE FROM ABOVE
+
 	$('form').submit(function (e) {
 		e.preventDefault();
 		var toAdd = $("input[name=checkListItem]").val();
 		$(".list").append("<li class='item'>" + " " + toAdd + "</li>");
+		$('#input').val('');
 	});
 }); 
 
-
-//test
-//when hovering over text, 'x' image does not show on new text elements. 
