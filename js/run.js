@@ -43,7 +43,7 @@ $(document).ready(function () {
 		var toAdd = $("input[name=checkListItem]").val();
 		$(".list").append("<li class='item'>" + " " + toAdd + "</li>");
 	});
-});
+}); 
 
 
 //test
